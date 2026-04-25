@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Hukum Ohm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <div class="container">
+        <h2>Kalkulator Hukum Ohm</h2>
+
+        <h3>Pilih Input 1</h3>
+        <select id="tipe1">
+            <option value="V">Tegangan (V)</option>
+            <option value="I">Arus (I)</option>
+            <option value="R">Resistansi (R)</option>
+        </select>
+        <input type="number" id="nilai1" placeholder="Masukkan nilai">
+
+        <h3>Pilih Input 2</h3>
+        <select id="tipe2">
+            <option value="V">Tegangan (V)</option>
+            <option value="I">Arus (I)</option>
+            <option value="R">Resistansi (R)</option>
+        </select>
+        <input type="number" id="nilai2" placeholder="Masukkan nilai">
+
+        <!-- ERROR WAJIB ADA -->
+        <div id="error"></div>
+
+        <button onclick="hitung()">Hitung</button>
+
+        <div class="hasil" id="hasil"></div>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3>Riwayat</h3>
+            <button onclick="hapusRiwayat()">Hapus</button>
+        </div>
+        <div id="riwayat"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
